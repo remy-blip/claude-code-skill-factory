@@ -1,0 +1,49 @@
+# home-ai — flexible ignore for an undecided stack (Python and/or Node)
+
+# ---- Secrets / local config (NEVER commit) ----
+.env
+.env.*
+!.env.example
+*.local
+secrets/
+credentials/
+
+# ---- Local mail store, index, models (large / private) ----
+data/
+mailstore/
+index/
+vectors/
+models/
+*.sqlite
+*.sqlite3
+*.db
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# ---- Node / TypeScript ----
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.next/
+out/
+coverage/
+*.tsbuildinfo
+
+# ---- Editors / OS ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
